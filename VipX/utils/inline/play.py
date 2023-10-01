@@ -12,7 +12,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
+    vip = math.floor(percentage)
     if 0 < vip <= 2:
         bar = "⚡𝙹𝙰𝙸ㅤ𝚂𝙷𝚁𝙴𝙴ㅤ𝚁𝙰𝙼⚡"
     elif 2 < vip < 4:
@@ -163,7 +163,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
+    vip = math.floor(percentage)
     if 0 < vip <= 10:
         bar = "✪ʟőⱱė✪—————————"
     elif 10 < vip < 20:
