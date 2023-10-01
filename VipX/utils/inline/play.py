@@ -139,20 +139,20 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝚂𝙸𝚈𝙰", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝚁𝙰𝙼", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸ㅤ𝚂𝙸𝚈𝙰ㅤ𝚁𝙰𝙼", callback_data=f"close"
+                text="𝙲𝙻𝙾𝚂𝙴", callback_data=f"close"
             )
         ],
     ]
@@ -209,20 +209,20 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝚂𝙸𝚈𝙰", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝚁𝙰𝙼", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸ㅤ𝚂𝙸𝚈𝙰ㅤ𝚁𝙰𝙼", callback_data=f"close"
+                text="𝙲𝙻𝙾𝚂𝙴", callback_data=f"close"
             )
         ],
     ]
@@ -251,20 +251,20 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝚂𝙸𝚈𝙰", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝚁𝙰𝙼", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸ㅤ𝚂𝙸𝚈𝙰ㅤ𝚁𝙰𝙼", callback_data=f"close"
+                text="𝙲𝙻𝙾𝚂𝙴", callback_data=f"close"
             )
         ],
     ]
@@ -290,20 +290,20 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝚂𝙸𝚈𝙰", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝚁𝙰𝙼", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸ㅤ𝚂𝙸𝚈𝙰ㅤ𝚁𝙰𝙼", callback_data=f"close"
+                text="𝙲𝙻𝙾𝚂𝙴", callback_data=f"close"
             )
         ],
     ]
@@ -427,10 +427,10 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴄʟᴏꜱᴇ", callback_data="close"
+                        text="𝙲𝙻𝙾𝚂𝙴", callback_data="close"
                     ),
                     InlineKeyboardButton(
-                text="ᴏᴡɴᴇʀ", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
                     )
                 ]    
             ]
@@ -461,20 +461,20 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝚂𝙸𝚈𝙰", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝚁𝙰𝙼", url=f"https://t.me/itz_Lucky_Raja"
+                text="𝙾𝚆𝙽𝙴𝚁", url=f"https://t.me/itz_Lucky_Raja"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝙹𝙰𝙸ㅤ𝚂𝙸𝚈𝙰ㅤ𝚁𝙰𝙼", callback_data=f"close"
+                text="𝙲𝙻𝙾𝚂𝙴", callback_data=f"close"
             )
         ],
     ]
