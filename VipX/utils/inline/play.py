@@ -29,7 +29,9 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
          bar = "——————✪ʟőⱱė✪———" 
      elif 70 <= vip < 80: 
          bar = "———————✪ʟőⱱė✪——" 
-     elif 80 <= vip < 95: 
+     elif 80 <= vip < 90: 
+         bar = "————————✪ʟőⱱė✪—" 
+     elif 90 <= vip < 100: 
          bar = "————————✪ʟőⱱė✪—" 
      else: 
          bar = "—————————✪ʟőⱱė✪"
@@ -102,7 +104,9 @@ def telegram_markup_timer(_, chat_id, played, dur):
         bar = "——————✪ʟőⱱė✪———"
     elif 70 <= vip < 80:
         bar = "———————✪ʟőⱱė✪——"
-    elif 80 <= vip < 95:
+    elif 80 <= vip < 90:
+        bar = "————————✪ʟőⱱė✪—"
+    elif 90 <= vip < 100:
         bar = "————————✪ʟőⱱė✪—"
     else:
         bar = "—————————✪ʟőⱱė✪"
