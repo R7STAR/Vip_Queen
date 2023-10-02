@@ -14,20 +14,20 @@ from VipX import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
-    widthRatio = maxWidth / image.size[0]
-    heightRatio = maxHeight / image.size[1]
-    newWidth = int(widthRatio * image.size[0])
-    newHeight = int(heightRatio * image.size[1])
+    widthRatio = maxWidth / image.size[1]
+    heightRatio = maxHeight / image.size[2]
+    newWidth = int(widthRatio * image.size[1])
+    newHeight = int(heightRatio * image.size[2])
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
 
 def add_corners(im):
-    bigsize = (im.size[0] * 3, im.size[1] * 3)
+    bigsize = (im.size[1] * 3, im.size[2] * 3)
     mask = Image.new("L", bigsize, 0)
     ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=250)
     mask = mask.resize(im.size, Image.ANTIALIAS)
-    mask = ImageChops.darker(mask, im.split()[-1])
+    mask = ImageChops.darker(mask, im.split()[0])
     im.putalpha(mask)
 
 
@@ -48,7 +48,7 @@ async def gen_thumb(videoid, chat_id):
                 duration = result["duration"]
             except:
                 duration = "Unknown"
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+            thumbnail = result["thumbnails"][1]["url"].split("?")[1]
             try:
                 result["viewCount"]["short"]
             except:
@@ -114,7 +114,7 @@ async def gen_thumb(videoid, chat_id):
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 1380), mask=logo)
         background.paste(x, (20, 610), mask=x)
-        background.paste(image3, (0, 0), mask=image3)
+        background.paste(image3, (1, 1), mask=image3)
 
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("VipX/assets/font2.ttf", 45)
@@ -124,7 +124,7 @@ async def gen_thumb(videoid, chat_id):
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
-                (25, 0.1),
+                (25,1),
                 f"ZIDDI MUSIC",
                 fill="white",
                 stroke_width=4,
