@@ -25,7 +25,7 @@ def changeImageSize(maxWidth, maxHeight, image):
 def add_corners(im):
     bigsize = (im.size[0] * 3, im.size[1] * 3)
     mask = Image.new("L", bigsize, 0)
-    ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=255)
+    ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=250)
     mask = mask.resize(im.size, Image.ANTIALIAS)
     mask = ImageChops.darker(mask, im.split()[-1])
     im.putalpha(mask)
@@ -74,7 +74,7 @@ async def gen_thumb(videoid, chat_id):
         xy = Image.open(wxy)
         a = Image.new('L', [640, 640], 0)
         b = ImageDraw.Draw(a)
-        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")
+        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 250, outline = "white")
         c = np.array(xy)
         d = np.array(a)
         e = np.dstack((c, d))
@@ -109,11 +109,11 @@ async def gen_thumb(videoid, chat_id):
 
         crop_img = Image.open(f"cache/cropped{videoid}.png")
         logo = crop_img.convert("RGBA")
-        logo.thumbnail((365, 365), Image.ANTIALIAS)
+        logo.thumbnail((360, 360), Image.ANTIALIAS)
         width = int((1280 - 1) / 2)
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 1380), mask=logo)
-        background.paste(x, (10, 610), mask=x)
+        background.paste(x, (20, 610), mask=x)
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
@@ -125,7 +125,7 @@ async def gen_thumb(videoid, chat_id):
         try:
             draw.text(
                 (25, 0.1),
-                f"VIP  MUSIC",
+                f"ZIDDI MUSIC",
                 fill="white",
                 stroke_width=4,
                 stroke_fill="black",
@@ -249,11 +249,11 @@ async def gen_qthumb(videoid, chat_id):
 
         crop_img = Image.open(f"cache/cropped{videoid}.png")
         logo = crop_img.convert("RGBA")
-        logo.thumbnail((365, 365), Image.ANTIALIAS)
-        width = int((1280 - 365) / 2)
+        logo.thumbnail((360, 360), Image.ANTIALIAS)
+        width = int((1280 - 360) / 2)
         background = Image.open(f"cache/temp{videoid}.png")
         background.paste(logo, (width + 2, 1380), mask=logo)
-        background.paste(x, (10, 610), mask=x)
+        background.paste(x, (20, 610), mask=x)
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
@@ -265,7 +265,7 @@ async def gen_qthumb(videoid, chat_id):
         try:
             draw.text(
                 (25, 0.1),
-                "VIP  MUSIC",
+                "ZIDDI MUSIC",
                 fill="white",
                 stroke_width=5,
                 stroke_fill="black",
