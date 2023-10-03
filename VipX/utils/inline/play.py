@@ -139,10 +139,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/+WDNH4yTCWe5jOTI1"
             ),
             InlineKeyboardButton(
-                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/+LHcxarl1geQyYWM1"
             )
         ],
         [
@@ -209,10 +209,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/+WDNH4yTCWe5jOTI1"
             ),
             InlineKeyboardButton(
-                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/+LHcxarl1geQyYWM1"
             )
         ],
         [
@@ -251,10 +251,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/+WDNH4yTCWe5jOTI1"
             ),
             InlineKeyboardButton(
-                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/+LHcxarl1geQyYWM1"
             )
         ],
         [
@@ -290,10 +290,10 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/+WDNH4yTCWe5jOTI1"
             ),
             InlineKeyboardButton(
-                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/+LHcxarl1geQyYWM1"
             )
         ],
         [
@@ -348,7 +348,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{https://t.me/+WDNH4yTCWe5jOTI1}",
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
@@ -375,7 +375,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"{config.SUPPORT_GROUP}",
+                url=f"{https://t.me/+WDNH4yTCWe5jOTI1}",
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -461,10 +461,10 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝙶𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP
+                text="𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/+WDNH4yTCWe5jOTI1"
             ),
             InlineKeyboardButton(
-                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=config.SUPPORT_CHANNEL
+                text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/+LHcxarl1geQyYWM1"
             )
         ],
         [
